@@ -51,11 +51,52 @@ hr {
 
 /* Layout */
 
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(128deg, #118, #a0d);
+}
+
 .container {
-	padding: 0;
+	padding: 10%;
 	margin: 0 auto;
-	width: 100%;
-	max-width: 1000px;
+	width: 90vw;
+	height: 90vh;
+	border: 2px solid #bbb;
+	text-align: center;
+	color: #bbb;
+}
+
+.quote {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.author {
+	font-style: italic;
+}
+
+.quote:before {
+	content: open-quote;
+	align-self: flex-start;
+ }
+
+ .quote:after {
+	content: close-quote;
+	align-self: flex-end;
+ }
+
+ .quote:before,
+ .quote:after {
+	font-size: 3em;
+ }
+
+.quotation {
+	font-size: 2em;
 }
 
 /* Media Queries */
